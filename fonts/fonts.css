@@ -1,0 +1,29 @@
+/* FONTS */
+
+/* Roboto */
+
+@font-face {
+  font-family: 'Roboto-Regular';
+  src: url('../fonts/roboto/Roboto-Regular.eot');
+  src: url('../fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+    url('../fonts/roboto/Roboto-Regular.woff') format('woff'),
+    url('../fonts/roboto/Roboto-Regular.ttf') format('truetype'),
+    url('../fonts/roboto/Roboto-Regular.svg#Roboto-Regular') format('svg'),
+    url('../fonts/roboto/Roboto-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Roboto-Slab */
+
+@font-face {
+  font-family: 'RobotoSlab-Bold';
+  src: url('../fonts/roboto-slab/RobotoSlab-Bold.eot');
+  src: url('../fonts/roboto-slab/RobotoSlab-Bold.woff2') format('woff2'),
+    url('../fonts/roboto-slab/RobotoSlab-Bold.woff') format('woff'),
+    url('../fonts/roboto-slab/RobotoSlab-Bold.ttf') format('truetype'),
+    url('../fonts/roboto-slab/RobotoSlab-Bold.svg#RobotoSlab-Bold') format('svg'),
+    url('../fonts/roboto-slab/RobotoSlab-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
