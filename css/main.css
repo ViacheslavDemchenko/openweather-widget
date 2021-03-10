@@ -40,6 +40,8 @@ body {
 }
 
 .container {
+  position: relative;
+  z-index: 2;
   max-width: 1440px;
   margin: 0 auto;
   padding-left: 15px;
@@ -589,6 +591,7 @@ template {
 /* SECTIONS */
 
 .main-section {
+  position: relative;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -604,6 +607,16 @@ template {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.main-section::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(51, 51, 51, 0.5);
 }
 
 /* BLOCKS */
@@ -625,6 +638,13 @@ template {
 .city-choice__inner input {
   width: 13.75rem;
   padding: 0.3125rem 0.5rem;
+  border: none;
+  outline: none;
+  border-radius: 0.3125rem;
+}
+
+.input-active {
+  border-radius: 0.3125rem 0.3125rem 0 0 !important;
 }
 
 .cities-list {
@@ -637,8 +657,14 @@ template {
 }
 
 .cities-list--active {
+  z-index: 1;
   max-height: 14.5rem;
   overflow-y: scroll;
+  border-radius: 0 0 0.3125rem 0.3125rem;
+}
+
+.cities-list--active::-webkit-scrollbar {
+  display: none;
 }
 
 .cities__item {
@@ -649,6 +675,10 @@ template {
 
 .cities__item:nth-child(even) {
   background: rgba(220, 220, 220, 0.6);
+}
+
+.cities__item:last-child {
+  border-bottom: none;
 }
 
 .widget-options {
@@ -729,6 +759,7 @@ template {
 .widget {
   width: 18.125rem;
   border: 0.0625rem solid #cecece;
+  border-radius: 0.3125rem;
   background: #fff;
 }
 
@@ -769,7 +800,7 @@ template {
 }
 
 .data__num {
-  width: 65%;
+  width: 60%;
   text-align: right;
 }
 

@@ -158,319 +158,341 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 }(window, document);
 "use strict";
 
-(function () {
-  var cities = [{
-    id: 524901,
-    name: 'Москва',
-    images: {
-      images_480: {
-        imgWebp_1x: 'img/moscow-480@1x.webp',
-        imgWebp_2x: 'img/moscow-480@2x.webp',
-        imgJpg_1x: 'img/moscow-480@1x.jpg',
-        imgJpg_2x: 'img/moscow-480@2x.jpg'
-      },
-      images_560: {
-        imgWebp_1x: 'img/moscow-560@1x.webp',
-        imgWebp_2x: '/img/moscow-560@2x.webp',
-        imgJpg_1x: 'img/moscow-560@1x.jpg',
-        imgJpg_2x: 'img/moscow-560@2x.jpg'
-      },
-      images_800: {
-        imgWebp_1x: 'img/moscow-800@1x.webp',
-        imgWebp_2x: 'img/moscow-800@2x.webp',
-        imgJpg_1x: 'img/moscow-800@1x.jpg',
-        imgJpg_2x: 'img/moscow-800@2x.jpg'
-      },
-      images_1024: {
-        imgWebp_1x: 'img/moscow-1024@1x.webp',
-        imgWebp_2x: 'img/moscow-1024@2x.webp',
-        imgJpg_1x: 'img/moscow-1024@1x.jpg',
-        imgJpg_2x: 'img/moscow-1024@2x.jpg'
-      },
-      images_1200: {
-        imgWebp_1x: 'img/moscow-1200@1x.webp',
-        imgWebp_2x: 'img/moscow-1200@2x.webp',
-        imgJpg_1x: 'img/moscow-1200@1x.jpg',
-        imgJpg_2x: 'img/moscow-1200@2x.jpg'
-      }
-    }
-  }, {
-    id: 498817,
-    name: 'Санкт-Петербург',
-    images: {
-      images_480: {
-        imgWebp_1x: 'img/st_petersburg-480@1x.webp',
-        imgWebp_2x: 'img/st_petersburg-480@2x.webp',
-        imgJpg_1x: 'img/st_petersburg-480@1x.jpg',
-        imgJpg_2x: 'img/st_petersburg-480@2x.jpg'
-      },
-      images_560: {
-        imgWebp_1x: 'img/st_petersburg-560@1x.webp',
-        imgWebp_2x: '/img/st_petersburg-560@2x.webp',
-        imgJpg_1x: 'img/st_petersburg-560@1x.jpg',
-        imgJpg_2x: 'img/st_petersburg-560@2x.jpg'
-      },
-      images_800: {
-        imgWebp_1x: 'img/st_petersburg-800@1x.webp',
-        imgWebp_2x: 'img/st_petersburg-800@2x.webp',
-        imgJpg_1x: 'img/st_petersburg-800@1x.jpg',
-        imgJpg_2x: 'img/st_petersburg-800@2x.jpg'
-      },
-      images_1024: {
-        imgWebp_1x: 'img/st_petersburg-1024@1x.webp',
-        imgWebp_2x: 'img/st_petersburg-1024@2x.webp',
-        imgJpg_1x: 'img/st_petersburg-1024@1x.jpg',
-        imgJpg_2x: 'img/st_petersburg-1024@2x.jpg'
-      },
-      images_1200: {
-        imgWebp_1x: 'img/st_petersburg-1200@1x.webp',
-        imgWebp_2x: 'img/st_petersburg-1200@2x.webp',
-        imgJpg_1x: 'img/st_petersburg-1200@1x.jpg',
-        imgJpg_2x: 'img/st_petersburg-1200@2x.jpg'
-      }
-    }
-  }, {
-    id: 501175,
-    name: 'Ростов-на-Дону'
-  }, {
-    id: 576116,
-    name: 'Благовещенск'
-  }, {
-    id: 580497,
-    name: 'Астрахань'
-  }, {
-    id: 578072,
-    name: 'Белгород'
-  }, {
-    id: 2026070,
-    name: 'Брянск'
-  }, {
-    id: 473247,
-    name: 'Владимир'
-  }, {
-    id: 472757,
-    name: 'Волгоград'
-  }, {
-    id: 472459,
-    name: 'Вологда'
-  }, {
-    id: 472045,
-    name: 'Воронеж'
-  }, {
-    id: 555312,
-    name: 'Иваново'
-  }, {
-    id: 2023469,
-    name: 'Иркутск'
-  }, {
-    id: 554234,
-    name: 'Калининград'
-  }, {
-    id: 553915,
-    name: 'Калуга'
-  }, {
-    id: 1503901,
-    name: 'Кемерово'
-  }, {
-    id: 548408,
-    name: 'Киров'
-  }, {
-    id: 543878,
-    name: 'Кострома'
-  }, {
-    id: 1501321,
-    name: 'Курган'
-  }, {
-    id: 538560,
-    name: 'Курск'
-  }, {
-    id: 535121,
-    name: 'Липецк'
-  }, {
-    id: 2123628,
-    name: 'Магадан'
-  }, {
-    id: 2124187,
-    name: 'Красногорск'
-  }, {
-    id: 524305,
-    name: 'Мурманск'
-  }, {
-    id: 520555,
-    name: 'Нижний Новгород'
-  }, {
-    id: 519336,
-    name: 'Великий Новгород'
-  }, {
-    id: 1496747,
-    name: 'Новосибирск'
-  }, {
-    id: 1496153,
-    name: 'Омск'
-  }, {
-    id: 515003,
-    name: 'Оренбург'
-  }, {
-    id: 515012,
-    name: 'Орел'
-  }, {
-    id: 519560,
-    name: 'Пенза'
-  }, {
-    id: 504341,
-    name: 'Псков'
-  }, {
-    id: 500095,
-    name: 'Рязань'
-  }, {
-    id: 499099,
-    name: 'Самара'
-  }, {
-    id: 498677,
-    name: 'Саратов'
-  }, {
-    id: 2119441,
-    name: 'Южно-Сахалинск'
-  }, {
-    id: 1486209,
-    name: 'Екатеринбург'
-  }, {
-    id: 491687,
-    name: 'Смоленск'
-  }, {
-    id: 484646,
-    name: 'Тамбов'
-  }, {
-    id: 480060,
-    name: 'Тверь'
-  }, {
-    id: 1489425,
-    name: 'Томск'
-  }, {
-    id: 3165115,
-    name: 'Тула'
-  }, {
-    id: 1488754,
-    name: 'Тюмень'
-  }, {
-    id: 479123,
-    name: 'Ульяновск'
-  }, {
-    id: 1508291,
-    name: 'Челябинск'
-  }, {
-    id: 468902,
-    name: 'Ярославль'
-  }, {
-    id: 2026643,
-    name: 'Биробиджан'
-  }, {
-    id: 1503772,
-    name: 'Ханты-Мансийск'
-  }, {
-    id: 2127202,
-    name: 'Анадырь'
-  }, {
-    id: 1493197,
-    name: 'Салехард'
-  }, {
-    id: 1510853,
-    name: 'Барнаул'
-  }, {
-    id: 2025339,
-    name: 'Чита'
-  }, {
-    id: 2122104,
-    name: 'Петропавловск-Камчатский'
-  }, {
-    id: 542420,
-    name: 'Краснодар'
-  }, {
-    id: 1502026,
-    name: 'Красноярск'
-  }, {
-    id: 511196,
-    name: 'Пермь'
-  }, {
-    id: 2013348,
-    name: 'Владивосток'
-  }, {
-    id: 487846,
-    name: 'Ставрополь'
-  }, {
-    id: 2022890,
-    name: 'Хабаровск'
-  }, {
-    id: 528293,
-    name: 'Майкоп'
-  }, {
-    id: 1506271,
-    name: 'Горно-Алтайск'
-  }, {
-    id: 479561,
-    name: 'Уфа'
-  }, {
-    id: 2014407,
-    name: 'Улан-Удэ'
-  }, {
-    id: 532096,
-    name: 'Махачкала'
-  }, {
-    id: 6313621,
-    name: 'Магас'
-  }, {
-    id: 563514,
-    name: 'Элиста'
-  }, {
-    id: 569154,
-    name: 'Черкесск'
-  }, {
-    id: 509820,
-    name: 'Петрозаводск'
-  }, {
-    id: 485239,
-    name: 'Сыктывкар'
-  }, {
-    id: 466806,
-    name: 'Йошкар-Ола'
-  }, {
-    id: 498698,
-    name: 'Саранск'
-  }, {
-    id: 2013159,
-    name: 'Якутск'
-  }, {
-    id: 473249,
-    name: 'Владикавказ'
-  }, {
-    id: 551487,
-    name: 'Казань'
-  }, {
-    id: 1500973,
-    name: 'Кызыл'
-  }, {
-    id: 554840,
-    name: 'Ижевск'
-  }, {
-    id: 1512236,
-    name: 'Абакан'
-  }, {
-    id: 558418,
-    name: 'Грозный'
-  }, {
-    id: 569696,
-    name: 'Чебоксары'
-  }, {
-    id: 694423,
-    name: 'Севастополь'
-  }, {
-    id: 693805,
-    name: 'Симферополь'
-  }, {
-    id: 706524,
-    name: 'Керчь'
-  }]; // Объект с настройками
+var cities = [{
+  id: 524901,
+  name: 'Москва',
+  nameEn: 'moscow'
+}, {
+  id: 498817,
+  name: 'Санкт-Петербург',
+  nameEn: 'st_petersburg'
+}, {
+  id: 501175,
+  name: 'Ростов-на-Дону',
+  nameEn: 'rostov-na-donu'
+}, {
+  id: 576116,
+  name: 'Благовещенск',
+  nameEn: 'blagoveshchensk'
+}, {
+  id: 580497,
+  name: 'Астрахань',
+  nameEn: 'astrakhan'
+}, {
+  id: 578072,
+  name: 'Белгород',
+  nameEn: 'belgorod'
+}, {
+  id: 2026070,
+  name: 'Брянск',
+  nameEn: 'bryansk'
+}, {
+  id: 473247,
+  name: 'Владимир',
+  nameEn: 'vladimir'
+}, {
+  id: 472757,
+  name: 'Волгоград',
+  nameEn: 'volgograd'
+}, {
+  id: 472459,
+  name: 'Вологда',
+  nameEn: 'volgograd'
+}, {
+  id: 472045,
+  name: 'Воронеж',
+  nameEn: 'volgograd'
+}, {
+  id: 555312,
+  name: 'Иваново',
+  nameEn: 'ivanovo'
+}, {
+  id: 2023469,
+  name: 'Иркутск',
+  nameEn: 'irkutsk'
+}, {
+  id: 554234,
+  name: 'Калининград',
+  nameEn: 'kaliningrad'
+}, {
+  id: 553915,
+  name: 'Калуга',
+  nameEn: 'kaluga'
+}, {
+  id: 1503901,
+  name: 'Кемерово',
+  nameEn: 'kemerovo'
+}, {
+  id: 548408,
+  name: 'Киров',
+  nameEn: 'kirov'
+}, {
+  id: 543878,
+  name: 'Кострома',
+  nameEn: 'kostroma'
+}, {
+  id: 1501321,
+  name: 'Курган',
+  nameEn: 'kurgan'
+}, {
+  id: 538560,
+  name: 'Курск',
+  nameEn: 'kursk'
+}, {
+  id: 535121,
+  name: 'Липецк',
+  nameEn: 'lipetsk'
+}, {
+  id: 2123628,
+  name: 'Магадан',
+  nameEn: 'magadan'
+}, {
+  id: 2124187,
+  name: 'Красногорск',
+  nameEn: 'krasnogorsk'
+}, {
+  id: 524305,
+  name: 'Мурманск',
+  nameEn: 'murmansk'
+}, {
+  id: 520555,
+  name: 'Нижний Новгород',
+  nameEn: 'nizhniy-novgorod'
+}, {
+  id: 519336,
+  name: 'Великий Новгород',
+  nameEn: 'velikiy-novgorod'
+}, {
+  id: 1496747,
+  name: 'Новосибирск',
+  nameEn: 'novosibirsk'
+}, {
+  id: 1496153,
+  name: 'Омск',
+  nameEn: 'omsk'
+}, {
+  id: 515003,
+  name: 'Оренбург',
+  nameEn: 'orenburg'
+}, {
+  id: 515012,
+  name: 'Орел',
+  nameEn: 'orel'
+}, {
+  id: 519560,
+  name: 'Пенза',
+  nameEn: 'penza'
+}, {
+  id: 504341,
+  name: 'Псков',
+  nameEn: 'pskov'
+}, {
+  id: 500095,
+  name: 'Рязань',
+  nameEn: 'ryazan'
+}, {
+  id: 499099,
+  name: 'Самара',
+  nameEn: 'samara'
+}, {
+  id: 498677,
+  name: 'Саратов',
+  nameEn: 'saratov'
+}, {
+  id: 2119441,
+  name: 'Южно-Сахалинск',
+  nameEn: 'yuzhno-sahalinsk'
+}, {
+  id: 1486209,
+  name: 'Екатеринбург',
+  nameEn: 'ekaterinburg'
+}, {
+  id: 491687,
+  name: 'Смоленск',
+  nameEn: 'smolensk'
+}, {
+  id: 484646,
+  name: 'Тамбов',
+  nameEn: 'tambov'
+}, {
+  id: 480060,
+  name: 'Тверь',
+  nameEn: 'tver'
+}, {
+  id: 1489425,
+  name: 'Томск',
+  nameEn: 'tomsk'
+}, {
+  id: 3165115,
+  name: 'Тула',
+  nameEn: 'tula'
+}, {
+  id: 1488754,
+  name: 'Тюмень',
+  nameEn: 'tyumen'
+}, {
+  id: 479123,
+  name: 'Ульяновск',
+  nameEn: 'ulyanovsk'
+}, {
+  id: 1508291,
+  name: 'Челябинск',
+  nameEn: 'chelyabinsk'
+}, {
+  id: 468902,
+  name: 'Ярославль',
+  nameEn: 'yaroslavl'
+}, {
+  id: 2026643,
+  name: 'Биробиджан',
+  nameEn: 'birobidzhan'
+}, {
+  id: 1503772,
+  name: 'Ханты-Мансийск',
+  nameEn: 'hanty-mansiisk'
+}, {
+  id: 2127202,
+  name: 'Анадырь',
+  nameEn: 'anadyr'
+}, {
+  id: 1493197,
+  name: 'Салехард',
+  nameEn: 'salehard'
+}, {
+  id: 1510853,
+  name: 'Барнаул',
+  nameEn: 'barnaul'
+}, {
+  id: 2025339,
+  name: 'Чита',
+  nameEn: 'chita'
+}, {
+  id: 2122104,
+  name: 'Петропавловск-Камчатский',
+  nameEn: 'petropalovsk-kamchatskiy'
+}, {
+  id: 542420,
+  name: 'Краснодар',
+  nameEn: 'krasnodar'
+}, {
+  id: 1502026,
+  name: 'Красноярск',
+  nameEn: 'krasnoyarsk'
+}, {
+  id: 511196,
+  name: 'Пермь',
+  nameEn: 'perm'
+}, {
+  id: 2013348,
+  name: 'Владивосток',
+  nameEn: 'vladivostok'
+}, {
+  id: 487846,
+  name: 'Ставрополь',
+  nameEn: 'stavropol'
+}, {
+  id: 2022890,
+  name: 'Хабаровск',
+  nameEn: 'habarovsk'
+}, {
+  id: 528293,
+  name: 'Майкоп',
+  nameEn: 'maikop'
+}, {
+  id: 1506271,
+  name: 'Горно-Алтайск',
+  nameEn: 'gorno-altaisk'
+}, {
+  id: 479561,
+  name: 'Уфа',
+  nameEn: 'ufa'
+}, {
+  id: 2014407,
+  name: 'Улан-Удэ',
+  nameEn: 'ulan-ude'
+}, {
+  id: 532096,
+  name: 'Махачкала',
+  nameEn: 'mahachkala'
+}, {
+  id: 6313621,
+  name: 'Магас',
+  nameEn: 'magas'
+}, {
+  id: 563514,
+  name: 'Элиста',
+  nameEn: 'elista'
+}, {
+  id: 569154,
+  name: 'Черкесск',
+  nameEn: 'cherkessk'
+}, {
+  id: 509820,
+  name: 'Петрозаводск',
+  nameEn: 'petrozavodsk'
+}, {
+  id: 485239,
+  name: 'Сыктывкар',
+  nameEn: 'syktyvkar'
+}, {
+  id: 466806,
+  name: 'Йошкар-Ола',
+  nameEn: 'yoshkar-ola'
+}, {
+  id: 498698,
+  name: 'Саранск',
+  nameEn: 'saransk'
+}, {
+  id: 2013159,
+  name: 'Якутск',
+  nameEn: 'yakutsk'
+}, {
+  id: 473249,
+  name: 'Владикавказ',
+  nameEn: 'vladikavkaz'
+}, {
+  id: 551487,
+  name: 'Казань',
+  nameEn: 'kazan'
+}, {
+  id: 1500973,
+  name: 'Кызыл',
+  nameEn: 'kyzyl'
+}, {
+  id: 554840,
+  name: 'Ижевск',
+  nameEn: 'izhevsk'
+}, {
+  id: 1512236,
+  name: 'Абакан',
+  nameEn: 'abakan'
+}, {
+  id: 558418,
+  name: 'Грозный',
+  nameEn: 'grozniy'
+}, {
+  id: 569696,
+  name: 'Чебоксары',
+  nameEn: 'cheboksary'
+}, {
+  id: 694423,
+  name: 'Севастополь',
+  nameEn: 'sevastopol'
+}, {
+  id: 693805,
+  name: 'Симферополь',
+  nameEn: 'simferopol'
+}, {
+  id: 706524,
+  name: 'Керчь',
+  nameEn: 'kerch'
+}];
+"use strict";
 
+;
+
+(function () {
+  // Объект с настройками
   var options = {
     APIKey: '959d949ddcff86a99efc29f96ae96b38',
     // APIKey сервиса погоды
@@ -566,6 +588,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             citiesList.classList.add('cities-list--active'); // Присваиваем списку подходящих городов активный класс для открытия выпадающего списка со скроллом
 
             citiesList.appendChild(li); // Прикрепляем каждый li с названеим подходящего города к списку
+
+            autocompleteInput.classList.add('input-active'); // Добавляем класс инпуту для отмены скругления нижних углов при выпадении списка
           }
         });
         var citiesItems = document.querySelectorAll('.cities__item'); // Выбираем коллекцию списка подходящих городов
@@ -577,7 +601,12 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
 
             findChoosenCityId(autocompleteInput.value); // Передаем в функцию поиска id выбранного города (value инпута)
 
-            bgImageChange(autocompleteInput.value);
+            bgImageChange(autocompleteInput.value); // Подставляем фоновую картинку соответствующего города
+
+            autocompleteInput.value = ''; // Очищаем инпут после выбора города в выпадающем списке
+
+            autocompleteInput.classList.remove('input-active'); // Удаляем класс инпуту для возврата скругления нижних углов при отсутствии выпадающего списка
+
             citiesList.innerHTML = ''; // Скрытие списка после выбора города
 
             citiesList.classList.remove('cities-list--active'); // Удаление активного класса у подходящих в массиве городов
@@ -590,6 +619,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
             citiesList.innerHTML = ''; // Скрытие списка после выбора города
 
             citiesList.classList.remove('cities-list--active'); // Удаление активного класса у подходящих в массиве городов
+
+            autocompleteInput.classList.remove('input-active'); // Удаляем класс инпуту для возврата скругления нижних углов при отсутствии выпадающего списка
           });
         });
       }
@@ -713,7 +744,8 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
   function doubleDigit(num) {
     if (num <= 9) num = "0".concat(num);
     return num;
-  }
+  } // Функция установки фоновой картинки выбранного города
+
 
   function bgImageChange(cityName) {
     var bgImage = document.querySelector('.main-section');
@@ -727,83 +759,83 @@ function _typeof(obj) { "@babel/helpers - typeof"; if (typeof Symbol === "functi
     });
 
     if (webpSupportCheck() && screenWidth <= 480 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_480.imgWebp_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-480@1x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth <= 480 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_480.imgWebp_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-480@2x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth > 480 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_560.imgWebp_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-560@1x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth > 480 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_560.imgWebp_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-560@2x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth > 560 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_800.imgWebp_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-800@1x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth > 560 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_800.imgWebp_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-800@2x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth > 800 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_1024.imgWebp_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-1024@1x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth > 800 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_1024.imgWebp_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-1024@2x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth > 1024 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_1200.imgWebp_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-1200@1x.webp)");
     }
 
     if (webpSupportCheck() && screenWidth > 1024 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_1200.imgWebp_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-1200@2x.webp)");
     }
 
     if (!webpSupportCheck() && screenWidth <= 480 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_480.imgJpg_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-480@1x.jpg)");
     }
 
     if (!webpSupportCheck() && screenWidth <= 480 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_480.imgJpg_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-480@2x.jpg)");
     }
 
     if (!webpSupportCheck() && screenWidth > 480 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_560.imgJpg_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-560@1x.jpg)");
     }
 
     if (!webpSupportCheck() && screenWidth > 480 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_560.imgJpg_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-560@2x.jpg)");
     }
 
     if (!webpSupportCheck() && screenWidth > 560 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_800.imgJpg_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-800@1x.jpg})");
     }
 
     if (!webpSupportCheck() && screenWidth > 560 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_800.imgJpg_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-800@2x.jpg)");
     }
 
     if (!webpSupportCheck() && screenWidth > 800 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_1024.imgJpg_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-1024@1x.jpg)");
     }
 
     if (!webpSupportCheck() && screenWidth > 800 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_1024.imgJpg_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-1024@2x.jpg)");
     }
 
     if (!webpSupportCheck() && screenWidth > 1024 && window.devicePixelRatio == 1) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_1200.imgJpg_1x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-1200@1x.jpg)");
     }
 
     if (!webpSupportCheck() && screenWidth > 1024 && window.devicePixelRatio >= 1.2) {
-      currentUrl = "url(".concat(cities[currentCityId].images.images_1200.imgJpg_2x, ")");
+      currentUrl = "url(img/".concat(cities[currentCityId].nameEn, "-1200@2x.jpg)");
     }
 
     bgImage.style.backgroundImage = currentUrl;
